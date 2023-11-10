@@ -8,8 +8,8 @@ public class Main {
 	private static final Logger logger = Logger.getLogger(Main.class.getName());
 
 	public int add(int a, int b) {
-		// try {
-			// if (a < 0 || b < 0) {
+		try {
+			if (a < 0 || b < 0) {
 				throw new IllegalArgumentException("Both numbers must be non-negative.");
 			}
 			if (Integer.MAX_VALUE - a < b) {
